@@ -1,0 +1,23 @@
+name: Release to npmjs
+
+on:
+    release:
+        types: [published]
+
+jobs:
+    release:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v2
+            - uses: actions/setup-node@v1
+              with:
+                  registry-url: https://registry.npmjs.org/
+
+            - name: Update package.json with the correct version
+            run: |
+                sed -i 's/"com.unity.nuget.newtonsoft-json": "3.0.2"/"com.unity.nuget.newtonsoft-json": "3.0.2"/' package.json
+                npm install
+            - run: npm install
+            - run: npm publish
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
