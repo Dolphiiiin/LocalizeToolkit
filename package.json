@@ -1,13 +1,21 @@
 {
-    "name": "com.dolphiiiin.localize-toolkit",
-    "version": "1.0.0",
-    "displayName": "Localize Toolkit",
-    "description": "Localize Toolkitは、Cluster Creator Kitの多言語リソース機能の設定をアシストするためのツールです。\n簡単なステップでTextコンポーネントにローカライズを設定することができます。",
-    "unity": "2019.1",
-    "unityRelease": "0b5",
-    "documentationUrl": "https://toza.notion.site/Localize-Toolkit-2ef04cf16833482c9dc4ac9674948663",
-    "dependencies": {
-        "mu.cluster.cluster-creator-kit": ""
-   }
+  "name": "com.dolphiiiin.localize-toolkit",
+  "version": "1.0.0",
+  "displayName": "Localize Toolkit",
+  "description": "Localize Toolkit\u306f\u3001Cluster Creator Kit\u306e\u591a\u8a00\u8a9e\u30ea\u30bd\u30fc\u30b9\u6a5f\u80fd\u306e\u8a2d\u5b9a\u3092\u30a2\u30b7\u30b9\u30c8\u3059\u308b\u305f\u3081\u306e\u30c4\u30fc\u30eb\u3067\u3059\u3002\n\u7c21\u5358\u306a\u30b9\u30c6\u30c3\u30d7\u3067Text\u30b3\u30f3\u30dd\u30fc\u30cd\u30f3\u30c8\u306b\u30ed\u30fc\u30ab\u30e9\u30a4\u30ba\u3092\u8a2d\u5b9a\u3059\u308b\u3053\u3068\u304c\u3067\u304d\u307e\u3059\u3002",
+  "author": "Dolphiiiin",
+  "unity": "2021.3",
+  "keywords": [
+    "unity"
+  ],
+  "license": "MIT",
+  "documentationUrl": "https://toza.notion.site/Localize-Toolkit-2ef04cf16833482c9dc4ac9674948663",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Dolphiiiin/LocalizeToolkit.git"
+  },
+  "dependencies": {
+    "mu.cluster.cluster-creator-kit": "",
+    "com.unity.nuget.newtonsoft-json": "3.0.2"
   }
-  
+}
