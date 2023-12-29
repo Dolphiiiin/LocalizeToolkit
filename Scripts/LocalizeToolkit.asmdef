@@ -1,0 +1,16 @@
+{
+    "name": "LocalizeToolkit",
+    "rootNamespace": "LocalizeToolkit",
+    "references": [
+        "GUID:e13ed9ef461794963a411b26ba6c539f"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
