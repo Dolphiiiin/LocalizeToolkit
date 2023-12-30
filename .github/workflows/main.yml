@@ -2,18 +2,16 @@ name: Release to npmjs
 
 on:
     release:
-        types: [published]
+        types: [created]
 
 jobs:
     release:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v2
-            - uses: actions/setup-node@v1
-                with:
-                    registry-url: https://registry.npmjs.org/
-            - run: npm install
+            - uses: actions/setup-node@v2
+              with:
+                  registry-url: 'https://registry.npmjs.org/'
             - run: npm publish
-                working-directory: Packages/jp.supertask.shaderlibcore
-                env:
-                    NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
+              env:
+                  NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
