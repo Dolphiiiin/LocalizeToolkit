@@ -15,7 +15,6 @@
     "url": "https://github.com/Dolphiiiin/LocalizeToolkit.git"
   },
   "dependencies": {
-    "mu.cluster.cluster-creator-kit": "",
-    "com.unity.nuget.newtonsoft-json": "3.0.2"
+    "mu.cluster.cluster-creator-kit": ""
   }
 }
